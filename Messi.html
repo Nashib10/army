@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        body {
+           margin: 0;
+           padding: 0;
+           color: #fff;
+        }
+
+        .section {
+            background-image: url(sgp.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section h1 {
+            position: static;
+        }
+
+        .section h1:nth-child(1):hover~.photo {
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            background-image: url(messi1.jpg);
+            width: 35%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .section h1:nth-child(2):hover~.photo {
+
+            cursor: pointer;
+            background-image: url(neymar.png);
+            width: 35%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .section h1:nth-child(3):hover~.photo {
+            top: 0px;
+            right: 0px;
+            cursor: pointer;
+            background-image: url(mbapa.jpg);
+            width: 35%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .photo {
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+   
+        <h1>Messi</h1>
+        <h1>Neymar</h1>
+        <h1>Mbappa</h1>
+        <div class="photo">
+
+        </div>
+    </div>
+
+</body>
